@@ -35,15 +35,17 @@ public class Main {
 
     public static void clock (){
         boolean on = true;
+        LocalDateTime nowish = LocalDateTime.now();
+        int oldSecond = nowish.getSecond();
         while(on == true) {
             LocalDateTime now = LocalDateTime.now();
             int hour = now.getHour();
             int minute = now.getMinute();
             int second = now.getSecond();
-            int temp = second;
-            if(second != temp) {
+            if(oldSecond != second) {
                 System.out.println(hour + ":" + minute + ":" + second);
             }
+
         }
 
     }
