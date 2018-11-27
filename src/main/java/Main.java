@@ -33,6 +33,7 @@ public class Main {
         System.out.println("It took " + flips + " flips to flip " + n + " heads in a row.");
     }
 
+    //need to figure out how to only change once per second
     public static void clock (){
         boolean on = true;
         LocalDateTime nowish = LocalDateTime.now();
