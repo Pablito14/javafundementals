@@ -3,10 +3,10 @@ import java.time.LocalDateTime;
 public class Main {
 
     public static void main(String[] args) {
-//        String myString = "Pablo";
-//        String answer = pluralize(myString, 0);
-//        System.out.println(answer);
-//        flipNHeads(4);
+        String myString = "Pablo";
+        String answer = pluralize(myString, 0);
+        System.out.println(answer);
+        flipNHeads(4);
         clock();
     }
 
