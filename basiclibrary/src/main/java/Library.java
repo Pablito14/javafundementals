@@ -19,6 +19,18 @@ public class Library {
     //Third problem
     boolean answerThree = containsDuplicates(answerOne);
     System.out.println(answerThree);
+
+    //Fourth problem
+    int[][] weeklyMonthTemperatures = {
+            {66, 64, 58, 65, 71, 57, 60},
+            {57, 65, 65, 70, 72, 65, 51},
+            {55, 54, 60, 53, 59, 57, 61},
+            {65, 56, 55, 52, 55, 62, 57}
+    };
+
+    int[] answerFour = lowestAverage(weeklyMonthTemperatures);
+    System.out.println(Arrays.toString(answerFour));
+
     }
 
     public static int[] roll(int n){
@@ -48,6 +60,25 @@ public class Library {
             }
             }
         return answer;
+    }
+
+    public static int[] lowestAverage(int[][] doubleArray){
+        int[] finalAnswer = doubleArray[0];
+        int lengthOfDA = doubleArray.length;
+        int[] averages = new int[lengthOfDA];
+
+        for(int i = 1; i < lengthOfDA; i++){
+            averages[i] = averageOfArray(doubleArray[i]);
+        }
+
+        for(int i = 1; i < lengthOfDA; i++){
+            if(averages[i] < averages[i+1]){
+                finalAnswer = doubleArray[i];
+            }
+
+        }
+
+        return finalAnswer;
     }
 
 //    public boolean someLibraryMethod() {
