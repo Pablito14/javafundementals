@@ -7,15 +7,18 @@ public class Library {
 
     public static void main(String[] args) {
 
-        //First problem
-    int[] answerOne = roll(7);
+    //First problem
+    int[] answerOne = roll(3);
     System.out.println(Arrays.toString(answerOne));
 
     //Second problem
-        int[] parameter = {9,9,9,9,9};
-        int answerTwo = averageOfArray(parameter);
-        System.out.println("" + answerTwo);
+    int[] parameter = answerOne;
+    int answerTwo = averageOfArray(parameter);
+    System.out.println("" + answerTwo);
 
+    //Third problem
+    boolean answerThree = containsDuplicates(answerOne);
+    System.out.println(answerThree);
     }
 
     public static int[] roll(int n){
@@ -33,6 +36,18 @@ public class Library {
         }
         average = average / arrayToCalc.length;
         return average;
+    }
+
+    public static boolean containsDuplicates(int[] arrayToCheck){
+        boolean answer = false;
+        for(int i = 0; i < arrayToCheck.length; i ++){
+            for(int j = i + 1; j < arrayToCheck.length; j ++){
+                if(arrayToCheck[i] == arrayToCheck[j]){
+                    answer = true;
+                }
+            }
+            }
+        return answer;
     }
 
 //    public boolean someLibraryMethod() {
