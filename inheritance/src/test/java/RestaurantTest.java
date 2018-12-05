@@ -30,7 +30,7 @@ public class RestaurantTest {
     public void getAverageOfReviews() {
         Restaurant Chanchos = new Restaurant("Chanchos", 0.0, "$");
         double chanchosRating = Chanchos.getAverageOfReviews();
-        assertEquals("Checks to see if inital rating is the expected output(0)", 0.0, chanchosRating, 1e-8);
+        assertEquals("Checks to see if initial rating is the expected output(0)", 0.0, chanchosRating, 1e-8);
 
        Chanchos.addReview("good", "Paul Blart", 4.4);
         chanchosRating = Chanchos.getAverageOfReviews();

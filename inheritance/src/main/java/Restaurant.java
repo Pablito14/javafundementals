@@ -1,16 +1,18 @@
 import java.util.*;
-public class Restaurant{
+public class Restaurant implements Review{
 
     /*Instance Variables*/
 
     private String name;
-    private double stars;
+    private double initialStars;
+    private double averageStars;
     private String priceAverage;
     private ArrayList reviews;
 
     /*Getters*/
     public String getName(){return name;}
-    public double getStars(){return stars;}
+    public double getInitialStarsStars(){return initialStars;}
+    public double getAverageStarsStars(){return averageStars;}
     public String getPriceAverage(){return priceAverage;}
     public ArrayList<Review> getReviews(){return reviews;}
 
@@ -18,9 +20,10 @@ public class Restaurant{
     public Restaurant(){}
 
     /*Initialized Restaurant (no review(s) upon creation)*/
-    public Restaurant(String name, double stars, String priceAverage) {
+    public Restaurant(String name, double initialStars, String priceAverage) {
         this.name = name;
-        this.stars = stars;
+        this.initialStars = initialStars;
+        this.averageStars = initialStars;
         this.priceAverage = priceAverage;
         this.reviews = new ArrayList<Review>();
     }
@@ -31,25 +34,27 @@ public class Restaurant{
     public void addReview(String body, String author, double stars){
         Review newReview = new Review(body, author, stars);
         this.reviews.add(newReview);
-        this.stars = getAverageOfReviews();
+        this.averageStars = getAverageOfReviews();
     }
 
     /*Calculates the average of all reviews*/
     public double getAverageOfReviews(){
-        int numberOfReviews = this.reviews.size();
-        double average = this.stars;
+        double numberOfReviews = this.reviews.size();
+        double average = this.initialStars;
         if(numberOfReviews > 0) {
             for (int i = 0; i < numberOfReviews; i++) {
-                average += this.stars;
+                average = average + this.reviews.get(i); // break into two statements
             }
             average = average / numberOfReviews;
         }
         return average;
     }
 
+    public String getBody(){}
+
     @Override
     public String toString(){
-        return ("name: " + this.name + ", stars: " + this.stars + ", price: " + this.priceAverage);
+        return ("name: " + this.name + ", stars: " + this.initialStars + ", price: " + this.priceAverage);
     }
 }
 
