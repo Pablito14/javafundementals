@@ -4,6 +4,7 @@
     <list default="true" id="ce44436f-16c9-4991-b62c-01bf0934050b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Review.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RestaurantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestaurantTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -22,11 +23,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Restaurant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="23">
+              <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RestaurantTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,20 +47,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Review.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+            <state relative-caret-position="-46">
+              <caret line="4" column="14" selection-start-line="4" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RestaurantTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ReviewTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-7">
+              <caret line="10" column="104" selection-start-line="10" selection-start-column="104" selection-end-line="10" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -71,9 +81,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/ReviewTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Reviewable.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RestaurantTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Review.java" />
         <option value="$PROJECT_DIR$/src/main/java/Restaurant.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RestaurantTest.java" />
       </list>
     </option>
   </component>
@@ -137,7 +147,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544031728260" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544041450940" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -163,7 +173,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RestaurantTest.testToString">
+  <component name="RunManager" selected="JUnit.RestaurantTest.getAverageOfReviews">
+    <configuration name="RestaurantTest.getAverageOfReviews" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inheritance.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RestaurantTest" />
+      <option name="METHOD_NAME" value="getAverageOfReviews" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestaurantTest.testGetName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="inheritance.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RestaurantTest" />
+      <option name="METHOD_NAME" value="testGetName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RestaurantTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="inheritance.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -196,6 +226,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RestaurantTest.getAverageOfReviews" />
+        <item itemvalue="JUnit.RestaurantTest.testGetName" />
         <item itemvalue="JUnit.RestaurantTest.testToString" />
         <item itemvalue="JUnit.ReviewTest.testToString" />
         <item itemvalue="JUnit.RestaurantTest.toString" />
@@ -216,29 +248,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestaurantTest_toString - 2018.12.04 at 09h 28m 42s.xml">
-      <configuration name="RestaurantTest.toString" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestaurantTest_testToString - 2018.12.04 at 09h 41m 43s.xml">
-      <configuration name="RestaurantTest.testToString" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestaurantTest_testToString - 2018.12.04 at 09h 46m 41s.xml">
-      <configuration name="RestaurantTest.testToString" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestaurantTest_testToString - 2018.12.04 at 09h 51m 08s.xml">
-      <configuration name="RestaurantTest.testToString" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ReviewTest_testToString - 2018.12.04 at 10h 10m 12s.xml">
       <configuration name="ReviewTest.testToString" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RestaurantTest_testToString - 2018.12.05 at 09h 41m 01s.xml">
       <configuration name="RestaurantTest.testToString" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RestaurantTest_testGetName - 2018.12.05 at 10h 19m 32s.xml">
+      <configuration name="RestaurantTest.testGetName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantTest_getAverageOfReviews - 2018.12.05 at 10h 38m 35s.xml">
+      <configuration name="RestaurantTest.getAverageOfReviews" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantTest_getAverageOfReviews - 2018.12.05 at 10h 42m 22s.xml">
+      <configuration name="RestaurantTest.getAverageOfReviews" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantTest_getAverageOfReviews - 2018.12.05 at 10h 59m 01s.xml">
+      <configuration name="RestaurantTest.getAverageOfReviews" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantTest_getAverageOfReviews - 2018.12.05 at 11h 00m 25s.xml">
+      <configuration name="RestaurantTest.getAverageOfReviews" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantTest_getAverageOfReviews - 2018.12.05 at 11h 00m 57s.xml">
+      <configuration name="RestaurantTest.getAverageOfReviews" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantTest_getAverageOfReviews - 2018.12.05 at 11h 05m 00s.xml">
+      <configuration name="RestaurantTest.getAverageOfReviews" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantTest_getAverageOfReviews - 2018.12.05 at 11h 52m 54s.xml">
+      <configuration name="RestaurantTest.getAverageOfReviews" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="895" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19349962" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19349962" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -247,8 +292,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28687415" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3328823" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991881" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -256,7 +301,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32941177" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32882273" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -268,7 +313,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18745276" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19349962" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -277,8 +322,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5163399" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3328823" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991881" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -286,7 +331,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32941177" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32882273" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -319,32 +364,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ReviewTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="-7">
           <caret line="10" column="104" selection-start-line="10" selection-start-column="104" selection-end-line="10" selection-end-column="104" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Review.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Restaurant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="-46">
+          <caret line="4" column="14" selection-start-line="4" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RestaurantTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        <state relative-caret-position="379">
+          <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Restaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
         </state>
       </provider>
     </entry>
