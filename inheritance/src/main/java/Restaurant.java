@@ -4,7 +4,7 @@ public class Restaurant /*extends Review */{
 
     private String name;
     private double stars;
-    private int priceAverage;
+    private String priceAverage;
     private ArrayList reviews;
 
     /*Empty Restaurant Object*/
@@ -13,7 +13,7 @@ public class Restaurant /*extends Review */{
     }
 
     /*Semi Initialized Restaurant (no review(s) upon creation)*/
-    public Restaurant(String name, double stars, int priceAverage) {
+    public Restaurant(String name, double stars, String priceAverage) {
         this.name = name;
         this.stars = stars;
         this.priceAverage = priceAverage;
@@ -21,7 +21,7 @@ public class Restaurant /*extends Review */{
     }
 
     /*Fully Initialized Restaurant (with review(s) upon creation)*/
-    public Restaurant(String name, double stars, int priceAverage, Review reviewOnThisLocation) {
+    public Restaurant(String name, double stars, String priceAverage, Review reviewOnThisLocation) {
         this.name = name;
         this.stars = stars;
         this.priceAverage = priceAverage;
