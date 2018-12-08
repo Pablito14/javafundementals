@@ -7,17 +7,29 @@ import static org.junit.Assert.*;
 public class LibraryTest {
 
     @Test
-    public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+    public void testRoll(){
+        int[] tester = roll(2);
+        assertfalse("these should be different values", tester[0] == tester[1] );
     }
 
     @Test
-    public void testForDuplicates(){
+    public void testAverageOfArray(){
+        int[] tester = {10, 20}
+        int answer = averageOfArray(tester);
+        assertTrue("This should test the average of all elements", 15, answer);
+    }
+
+    @Test
+    public void testContainsDuplicates(){
         int[] arrayToCheckF = {0, 1, 2};
         int[] arrayToCheckT = {1, 1, 1};
         assertFalse("Testing duplicate method for duplicates", Library.containsDuplicates(arrayToCheckF));
         assertTrue("Testing duplicate method for duplicates", Library.containsDuplicates(arrayToCheckT));
+    }
+
+    @Test
+    public void testLowestAverage(){
+
     }
 
     @Test
@@ -29,6 +41,12 @@ public class LibraryTest {
                 {65, 56, 55, 52, 55, 62, 57}
         };
         assert
+    }
+
+    @Test
+    public void testSomeLibraryMethod() {
+        Library classUnderTest = new Library();
+        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
 
 }
