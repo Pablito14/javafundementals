@@ -2,7 +2,6 @@ import java.util.*;
 public class Restaurant implements Review{
 
     /*Instance Variables*/
-
     private String name;
     private double initialStars;
     private double averageStars;
@@ -16,7 +15,7 @@ public class Restaurant implements Review{
     public String getPriceAverage(){return priceAverage;}
     public ArrayList<Review> getReviews(){return reviews;}
 
-    /*Constructors*/
+    /*******************************Constructors********************************/
     public Restaurant(){}
 
     /*Initialized Restaurant (no review(s) upon creation)*/
@@ -28,7 +27,7 @@ public class Restaurant implements Review{
         this.reviews = new ArrayList<Review>();
     }
 
-    /**********************Instance Methods**********************/
+    /***************************Instance Methods*********************************/
 
     /*Adds a Review object to this Restaurants ArrayList of Reviews*/
     public void addReview(String body, String author, double stars){
@@ -49,8 +48,22 @@ public class Restaurant implements Review{
         }
         return average;
     }
+/**********************************Review Interface********************************/
+    //declare object?
 
-    public String getBody(){}
+    public String getBody(){
+        return "";
+    }
+
+    public String getAuthor(){
+        return "";
+    }
+
+    public double getStars(){
+        return 0.0;
+    }
+    /**********************************Review Interface********************************/
+
 
     @Override
     public String toString(){
