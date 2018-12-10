@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="basiclibrary.main" target="1.10" />
       <module name="basiclibrary.test" target="1.10" />
+      <module name="javafundementals.basiclibrary.main" target="1.10" />
+      <module name="javafundementals.basiclibrary.test" target="1.10" />
     </bytecodeTargetLevel>
   </component>
 </project>
