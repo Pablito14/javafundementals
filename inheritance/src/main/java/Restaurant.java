@@ -1,5 +1,5 @@
 import java.util.*;
-public class Restaurant implements Review{
+public class Restaurant{
 
     /*Instance Variables*/
     private String name;
@@ -18,7 +18,7 @@ public class Restaurant implements Review{
     /*******************************Constructors********************************/
     public Restaurant(){}
 
-    /*Initialized Restaurant (no review(s) upon creation)*/
+    /*Initialized Restaurant (no reviews upon creation)*/
     public Restaurant(String name, double initialStars, String priceAverage) {
         this.name = name;
         this.initialStars = initialStars;
@@ -30,40 +30,25 @@ public class Restaurant implements Review{
     /***************************Instance Methods*********************************/
 
     /*Adds a Review object to this Restaurants ArrayList of Reviews*/
-    public void addReview(String body, String author, double stars){
-        Review newReview = new Review(body, author, stars);
-        this.reviews.add(newReview);
-        this.averageStars = getAverageOfReviews();
+    public void addReview(Review review){
+        this.reviews.add(review);
+        review.restaurant = this;
+        averageStars = getAverageOfReviews();
     }
 
     /*Calculates the average of all reviews*/
     public double getAverageOfReviews(){
-        double numberOfReviews = this.reviews.size();
+        int numberOfReviews = this.reviews.size();
         double average = this.initialStars;
         if(numberOfReviews > 0) {
             for (int i = 0; i < numberOfReviews; i++) {
-                average = average + this.reviews.get(i); // break into two statements
+                Review temp = this.reviews.indexOf(i);
+                average = average + temp.getStars(); // break into two statements
             }
             average = average / numberOfReviews;
         }
         return average;
     }
-/**********************************Review Interface********************************/
-    //declare object?
-
-    public String getBody(){
-        return "";
-    }
-
-    public String getAuthor(){
-        return "";
-    }
-
-    public double getStars(){
-        return 0.0;
-    }
-    /**********************************Review Interface********************************/
-
 
     @Override
     public String toString(){
